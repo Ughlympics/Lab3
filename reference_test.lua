@@ -2,7 +2,7 @@ local busted = require("busted")
 local assert = require("luassert")
 
 describe("Reference Test", function()
-    it("", function()
+    it("Checks the referece work ", function()
         local table1 = {1, 2, 3}
         local table2 = table1
         table1[1] = 100

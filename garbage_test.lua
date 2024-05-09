@@ -3,7 +3,7 @@ local assert = require("luassert")
 
 
 describe("Garbage Test", function()
-    it("", function()
+    it("Checks the operation of the garbage collector", function()
         local objects = {}
         for i = 1, 100000 do
             table.insert(objects, {})

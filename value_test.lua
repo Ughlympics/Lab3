@@ -2,7 +2,7 @@ local busted = require("busted")
 local assert = require("luassert")
 
 describe("ValueTest", function()
-    it("Test name", function()
+    it("Checks the value work", function()
         local a = 2
         local b = a
         a = 4
