@@ -7,10 +7,16 @@ describe("Stack test", function()
        local heap = 9
        heap = nil
        
-       local memory = collectgarbage('count')
-       collectgarbage()
+        for i = 1, 10 do
+            local memory = collectgarbage('count')
+        end
+        collectgarbage()
+        for i = 1, 10 do
+            local memory2 = collectgarbage('count')
+        end
        
-       assert.equal(collectgarbage('count'),memory)
+       
+       assert.equal(memory2, memory)
 
     end)
 end)
